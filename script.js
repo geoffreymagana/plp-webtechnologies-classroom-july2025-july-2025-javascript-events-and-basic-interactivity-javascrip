@@ -5,7 +5,7 @@ const messageBtn = document.getElementById("messageBtn");
 const messageOutput = document.getElementById("messageOutput");
 
 messageBtn.addEventListener("click", () => {
-  messageOutput.textContent = "Button clicked! 🎉 JavaScript is listening!";
+  messageOutput.textContent = "Button clicked! 🎉";
 });
 
 // ====================
