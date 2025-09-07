@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Interactive JS</title>
+</head>
+<body>
+   
+  <header>
+    <h1>Interactive Web Page Assignment</h1>
+  </header>
+
+  <!-- Part 1: Event Handling -->
+  <section id="events">
+    <h2>Event Handling</h2>
+    <button id="messageBtn">Click Me</button>
+    <p id="messageOutput"></p>
+  </section>
+
+  <!-- Part 2: Interactive Elements -->
+  <section id="interactive">
+    <h2>Interactive Features</h2>
+
+    <!-- Light/Dark Mode Toggle -->
+    <button id="themeToggle">Toggle Dark Mode</button>
+
+    <!-- Counter Game -->
+    <div id="counter">
+      <p>Counter: <span id="countValue">0</span></p>
+      <button id="increaseBtn">Increase</button>
+      <button id="resetBtn">Reset</button>
+    </div>
+
+    <!-- Collapsible FAQ -->
+    <div class="faq">
+  <h3 class="faq-question">What is this assignment?</h3>
+  <p class="faq-answer">It’s about practicing event handling, DOM manipulation, and validation with JavaScript.</p>
+</div>
+
+<div class="faq">
+  <h3 class="faq-question">How does the dark mode work?</h3>
+  <p class="faq-answer">It toggles a CSS class on the body element.</p>
+</div>
+
+<div class="faq">
+  <h3 class="faq-question">Can I add more interactive features?</h3>
+  <p class="faq-answer">Yes! Be as creative as you like.</p>
+</div>
+
+<div class="faq">
+  <h3 class="faq-question">How is form validation done?</h3>
+  <p class="faq-answer">With custom JavaScript conditions and regex patterns.</p>
+</div>
+
+  </section>
+
+  <!-- Part 3: Form Validation -->
+  <section id="form-section">
+    <h2>Form Validation</h2>
+    <form id="signupForm" novalidate>
+      <label>
+        Name:
+        <input type="text" id="name" placeholder="John Doe" required />
+      </label>
+      <span class="error" id="nameError"></span>
+
+      <label>
+        Email:
+        <input type="email" id="email" placeholder="john.doe@email.com" required />
+      </label>
+      <span class="error" id="emailError"></span>
+
+      <label>
+        Password:
+        <input type="password" id="password" placeholder="********" required />
+      </label>
+      <span class="error" id="passwordError"></span>
+
+      <button type="submit">Sign Up</button>
+    </form>
+    <p id="formSuccess" class="success"></p>
+  </section>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
